@@ -1,18 +1,11 @@
-from datetime import date
+import json
 import os
 import telebot
 from geopy.geocoders import Nominatim
-import json
-# from translate import Translator
 
-# translator = Translator(to_lang="Russian")
+bot = telebot.TeleBot(os.environ.get("BOT_TOKEN"))
 
-# geolocator = Nominatim(user_agent="geoapiExercises")
-
-# bot = telebot.TeleBot(os.environ.get("BOT_TOKEN"))
-TOKEN = '5174367037:AAFh8m-c7gIoVO6_H-V9hMBeLqOVjnadXfA'
-
-bot = telebot.TeleBot(TOKEN)
+# bot = telebot.TeleBot(TOKEN)
 
 bottons = {
     "Оставить отзыв": None,
